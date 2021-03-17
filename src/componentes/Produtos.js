@@ -23,11 +23,23 @@ const ProdutosImagens = styled.div`
 `;
 
 export default class Produtos extends React.Component {
+  
+  
   render() {
+    let quantidade = 0;
+    let listaProdutos = this.props.listaProdutos.map((produto) => {
+      quantidade++;
+      return (
+      <ImagemProduto 
+        imagem={produto.imagem}
+        nome={produto.nome}
+        valor={produto.valor} 
+      />)
+    })
     return (
       <ProdutosContainer>
         <ProdutosInfo>
-          <p>{`Quantidade de produtos: {"4"}`}</p>
+          <p>{`Quantidade de produtos: ${quantidade}`}</p>
           <div>
             <label>{"Ordenação"}</label>
             <select>
@@ -37,31 +49,7 @@ export default class Produtos extends React.Component {
           </div>
         </ProdutosInfo>
         <ProdutosImagens>
-          <ImagemProduto
-            imagem={"https://picsum.photos/200/200?a=4"}
-            nome="Produto 4"
-            valor="R$10,00"
-          />
-          <ImagemProduto
-            imagem={"https://picsum.photos/200/200?a=1"}
-            nome="Produto 2"
-            valor="R$10,00"
-          />
-          <ImagemProduto
-            imagem={"https://picsum.photos/200/200?a=3"}
-            nome="Produto 3"
-            valor="R$10,00"
-          />
-          <ImagemProduto
-            imagem={"https://picsum.photos/200/200?a=5"}
-            nome="Produto 5"
-            valor="R$10,00"
-          />
-          <ImagemProduto
-            imagem={"https://picsum.photos/200/200?a=6"}
-            nome="Produto 6"
-            valor="R$10,00"
-          />
+          {listaProdutos}
         </ProdutosImagens>
       </ProdutosContainer>
     );
