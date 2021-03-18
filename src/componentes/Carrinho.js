@@ -11,19 +11,23 @@ const ContainerCarrinho = styled.div`
 
 export default class Carrinho extends React.Component {
   render() {
+    let valorTotal = 0;
+    let produtosCarrinho = this.props.produtosCarrinho.map((produto) => {
+      valorTotal += (produto.quantidade * produto.valor);
+      return (
+        <ProdutoCarrinho 
+          id = {produto.id}
+          quantidade={produto.quantidade}
+          nome={produto.nome}
+          remover={this.props.remover}
+        />
+      )
+    })
     return (
       <ContainerCarrinho>
         <h3>{"Carrinho"}</h3>
-        <ProdutoCarrinho
-            quantidade="2"
-            nome="Produto4"
-        />
-        <ProdutoCarrinho
-            quantidade="2"
-            nome="Produto4"
-        />
-
-        <p>{"Valor total: R$70,00"}</p>
+          {produtosCarrinho}
+        <p>{`Valor total: R$${valorTotal},00`}</p>
       </ContainerCarrinho>
     );
   }

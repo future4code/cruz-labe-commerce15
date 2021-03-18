@@ -24,7 +24,7 @@ export default class ProdutoCarrinho extends React.Component {
         <ContainerProduto>
             <p>{`${this.props.quantidade}x`}</p>
             <p>{this.props.nome}</p>
-            <button>{"Remover"}</button>
+            <button onClick={() => this.props.remover(this.props.id)}>{"Remover"}</button>
         </ContainerProduto>
     );
   }
