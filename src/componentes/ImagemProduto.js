@@ -17,12 +17,13 @@ export default class ImagemProduto extends React.Component {
   render() {
     return (
       <ImagemContainer>
-        <img 
+        <img
             src={this.props.imagem}
+            alt={this.props.nome}
         />
         <p>{this.props.nome}</p>
         <p>{this.props.valor}</p>
-        <button>{"Adicionar ao carrinho"}</button>
+        <button onClick={() => {this.props.onClickBotao(this.props.id, this.props.nome, this.props.valor)}}>{"Adicionar ao carrinho"}</button>
       </ImagemContainer>
     );
   }

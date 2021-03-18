@@ -23,28 +23,54 @@ const ProdutosImagens = styled.div`
 `;
 
 export default class Produtos extends React.Component {
+  state = {
+    ordenacao: 'crescente',
+  }
   
-  
+  handleChangeSelect = (event) => {
+    this.setState({ordenacao: event.target.value})
+  }
+
   render() {
+    // Quantidade de produtos
     let quantidade = 0;
-    let listaProdutos = this.props.listaProdutos.map((produto) => {
+    let listaProdutos;
+
+    // Seleção do tipo de ordenação a fazer na lista de produtos
+    switch(this.state.ordenacao) {
+      case 'crescente':
+        listaProdutos = this.props.listaProdutos.sort((a, b) => a.valor - b.valor)
+        break;
+      case 'decrescente':
+        listaProdutos = this.props.listaProdutos.sort((a, b) => b.valor - a.valor)
+        break;
+      default:
+        listaProdutos = this.props.listaProdutos.sort((a, b) => a.valor - b.valor)
+        break;
+    }
+
+    // Renderizando cada produto da lista de produtos para o componente 'ImagemProduto'
+     listaProdutos = listaProdutos.map((produto) => {
       quantidade++;
       return (
-      <ImagemProduto 
+      <ImagemProduto key={produto.id}
+        id={produto.id}
         imagem={produto.imagem}
         nome={produto.nome}
-        valor={produto.valor} 
+        valor={produto.valor}
+        onClickBotao={this.props.onClickBotao}
       />)
-    })
+      })
+
     return (
       <ProdutosContainer>
         <ProdutosInfo>
           <p>{`Quantidade de produtos: ${quantidade}`}</p>
           <div>
             <label>{"Ordenação"}</label>
-            <select>
-              <option>{"Crescente"}</option>
-              <option>{"Decrescente"}</option>
+            <select value={this.state.ordenacao} onChange={this.handleChangeSelect}>
+              <option value="crescente">{"Crescente"}</option>
+              <option value="decrescente">{"Decrescente"}</option>
             </select>
           </div>
         </ProdutosInfo>
