@@ -141,7 +141,7 @@ export default class App extends React.Component {
       },
       {
         id: 11,
-        nome: "camisa alien-sense",
+        nome: "camisa aliensense",
         valor: 50.0,
         imagem: camisa11,
       },

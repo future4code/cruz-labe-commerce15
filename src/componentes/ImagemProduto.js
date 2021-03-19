@@ -10,10 +10,22 @@ const ImagemContainer = styled.div`
     border-bottom: 1px solid black;
     height: 340px;
     font-weight: 300;
+    overflow:hidden;
+		
     
 
     & > img {
       width: 200px;
+      max-width:100%;
+      --moz-transition:all 0.3s;
+      --webkit-transition: all 0.3s;
+      transition:all 0.3s;
+    }
+
+    &> img:hover{
+    --moz-transform: scale(1.1);
+    --webkit-transfomr: scale(1.1);
+    transform:scale(1.1);
     }
 
     & > div {
@@ -24,6 +36,7 @@ const ImagemContainer = styled.div`
       padding-top: 10px;
       font-size: 14px;
       text-transform: uppercase;
+      
     }
 
     & > button {
@@ -44,7 +57,6 @@ const ImagemContainer = styled.div`
 
 `
 
-
 export default class ImagemProduto extends React.Component {
   render() {
     return (
@@ -57,7 +69,7 @@ export default class ImagemProduto extends React.Component {
         <p>{this.props.nome}</p>
         <p>R$ {this.props.valor}</p>
         </div>
-        <button onClick={() => {this.props.onClickBotao(this.props.id, this.props.nome, this.props.valor)}}>{"Adicionar ao carrinho"}</button>
+       <button onClick={() => {this.props.onClickBotao(this.props.id, this.props.nome, this.props.valor)}}>{"Adicionar ao carrinho"}</button>
       </ImagemContainer>
     );
   }
