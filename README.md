@@ -2,6 +2,9 @@
 
 Link do site: http://mute-zephyr.surge.sh/
 
+## O que é?
+## Como usar?
+
 **<h2>Funcionalidades presentes no sistema:</h2>** 
 **HOME**<br>
 Amostra de todos os produtos<br>
