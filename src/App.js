@@ -5,6 +5,7 @@ import Header from './componentes/Header'
 import Produtos from "./componentes/Produtos";
 import Carrinho from "./componentes/Carrinho";
 import AbrirCarrinho from './componentes/AbrirCarrinho'
+import Footer from './componentes/Footer'
 
 import camisa1 from './img/camiseta1.jpeg'
 import camisa2 from './img/camiseta2.jpg'
@@ -23,7 +24,7 @@ import camisa12 from './img/camiseta12.jpg'
 import LogoBusca from './img/buscar.svg'
 
 const Container = styled.div`
-  height: 480px;
+  min-height: 480px;
   background: #fff;
   display: grid;
   padding: 20px;
@@ -261,41 +262,44 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <Header/>
-          <BuscaNomeProduto>
-            <img src={LogoBusca} />
-            <input
-              type="text"
-              placeholder={'Busca por nome'}
-              value={this.state.nomeProduto.toLowerCase()} // aquiiiiiiiiiiiiiiiii
-              onChange={this.onChangeProduto}
-            />
-            <AbrirCarrinho/>
-            </BuscaNomeProduto>
+        <BuscaNomeProduto>
+          <img src={LogoBusca} />
+          <input
+            type="text"
+            placeholder={'Busca por nome'}
+            value={this.state.nomeProduto.toLowerCase()}
+            onChange={this.onChangeProduto}
+          />
+          <AbrirCarrinho/>
+        </BuscaNomeProduto>
         <Container>
-          <FiltroContainer>
-            <h3>{"Filtros"}</h3>
-            <label>{"Valor minimo:"}</label>
-            <input
-              type="number"
-              value={this.state.valorMinimo}
-              onChange={this.onChangeValorMinimo}
+            <FiltroContainer>
+              <h3>{"Filtros"}</h3>
+              <label>{"Valor minimo:"}</label>
+              <input
+                type="number"
+                min="0"
+                value={this.state.valorMinimo}
+                onChange={this.onChangeValorMinimo}
+              />
+              <label>{"Valor maximo:"}</label>
+              <input
+                type="number"
+                min="1"
+                value={this.state.valorMaximo}
+                onChange={this.onChangeValorMaximo}
+              />
+            </FiltroContainer>
+            <Produtos 
+              listaProdutos={listaFiltrada}
+              onClickBotao={this.onClickProdutoCarrinho} 
             />
-            <label>{"Valor maximo:"}</label>
-            <input
-              type="number"
-              value={this.state.valorMaximo}
-              onChange={this.onChangeValorMaximo}
+            <Carrinho 
+              produtosCarrinho={this.state.produtosCarrinho}
+              remover={this.onClickRemoverProduto}
             />
-          </FiltroContainer>
-          <Produtos 
-            listaProdutos={listaFiltrada}
-            onClickBotao={this.onClickProdutoCarrinho} 
-          />
-          <Carrinho 
-            produtosCarrinho={this.state.produtosCarrinho}
-            remover={this.onClickRemoverProduto}
-          />
         </Container>
+          <Footer/>
       </div>
     );
   }

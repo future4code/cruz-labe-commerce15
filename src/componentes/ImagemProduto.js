@@ -6,9 +6,7 @@ import LogoCarrinho from './../img/carrinho.svg'
 const ImagemContainer = styled.div`
     display: flex;
     flex-direction: column;
-    //border-right: 1px solid black;
-    //border-bottom: 1px solid black;
-    height: 350px;
+    min-height: 350px;
     font-weight: 300;
     overflow:hidden;
    
@@ -18,9 +16,9 @@ const ImagemContainer = styled.div`
 
    }
 
-
     & > img {
       max-width:100%;
+      max-height: 250px;
       --moz-transition:all 0.3s;
       --webkit-transition: all 0.3s;
       transition:all 0.3s;
@@ -35,7 +33,6 @@ const ImagemContainer = styled.div`
     & > div {
       display: flex;
       flex-direction:column;
-      //justify-content: space-between;
       font-size: 14px;
       text-transform: uppercase;
       padding:0 10px;
@@ -60,7 +57,7 @@ const ImagemContainer = styled.div`
     & > button {
       align-self: center;
       margin-right: 10px;
-      height:30px;
+      min-height: 30px;
       border: none;
       border-bottom: 2px solid #008E97;
       font-weight: bold;
