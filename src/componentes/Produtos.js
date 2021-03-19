@@ -25,7 +25,7 @@ const ProdutosImagens = styled.div`
     margin: 30px 25px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 370px 370px;
-    grid-gap: 20px;
+    grid-gap: 30px;
 `;
 
 export default class Produtos extends React.Component {
