@@ -20,20 +20,20 @@ Att.
 ```
 **<h2>Funcionalidades presentes no sistema:</h2>** 
 **HOME**<br>
-Amostra de todos os produtos
+Amostra de todos os produtos<br>
 Ordenção em ordem crescente e decrescente de preço
 
 **PRODUTOS**<br>
-Botão que permite adicionar produtos ao carrinho
+Botão que permite adicionar produtos ao carrinho<br>
 Exibição do nome, preço e imagem em um card
 
 **CARRINHO**<br>
-Amostra de todos os produtos e quantidades adicionadas
-Remoção de itens do carrinho
+Amostra de todos os produtos e quantidades adicionadas<br>
+Remoção de itens do carrinho<br>
 Mostra do valor total do carrinho
 
 **FILTRO**<br>
-Possível fazer pesquisas através do valor mínimo e máximo do produto
+Possível fazer pesquisas através do valor mínimo e máximo do produto<br>
 Possível filtrar os produtos através do nome
 
 
