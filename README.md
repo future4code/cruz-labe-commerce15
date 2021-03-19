@@ -1,6 +1,6 @@
 ### Projeto Labe-commerce - Grupo 15
 
-Link do site: [LabE-commerce](http://mute-zephyr.surge.sh/)
+Link do site: [Labe-commerce](http://mute-zephyr.surge.sh/)
 
 ## O que é?
 ## Como usar?
