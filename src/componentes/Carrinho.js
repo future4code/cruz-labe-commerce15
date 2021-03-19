@@ -12,6 +12,10 @@ const ContainerCarrinho = styled.div`
     & > h3 {
       color: #00000090;
     }
+
+    &>p{
+      font-weight:normal;
+    }
 `
 
 export default class Carrinho extends React.Component {
