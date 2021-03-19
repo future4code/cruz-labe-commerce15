@@ -18,7 +18,7 @@ O prazo é até sexta, 17h. Sem atrasos.
 Como de costume, espero uma entrega no mínimo impecável.
 Att.
 ```
-**<h3>Funcionalidades presentes no sistema:</h3>** <br>
+**<h2>Funcionalidades presentes no sistema:</h2>** 
 **HOME**<br>
 Amostra de todos os produtos
 Ordenção em ordem crescente e decrescente de preço
