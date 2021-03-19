@@ -11,17 +11,17 @@ Link do site: http://mute-zephyr.surge.sh/
 * Ordenção em ordem crescente e decrescente de preço
 
 **PRODUTOS**<br>
--Botão que permite adicionar produtos ao carrinho<br>
--Exibição do nome, preço e imagem em um card
+* Botão que permite adicionar produtos ao carrinho<br>
+* Exibição do nome, preço e imagem em um card
 
 **CARRINHO**<br>
--Amostra de todos os produtos e quantidades adicionadas<br>
--Remoção de itens do carrinho<br>
--Mostra do valor total do carrinho
+* Amostra de todos os produtos e quantidades adicionadas<br>
+* Remoção de itens do carrinho<br>
+* Mostra do valor total do carrinho
 
 **FILTRO**<br>
--Possível fazer pesquisas através do valor mínimo e máximo do produto<br>
--Possível filtrar os produtos através do nome
+* Possível fazer pesquisas através do valor mínimo e máximo do produto<br>
+* Possível filtrar os produtos através do nome
 
 
 ## Desenvolvedores:
