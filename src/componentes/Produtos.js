@@ -7,13 +7,19 @@ const ProdutosContainer = styled.div``;
 const ProdutosInfo = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 5px 10px;
+  padding: 10px 10px;
+  font-weight: 300;
 
   & > * {
     padding: 0;
     margin: 0;
   }
+
+  & > div > label {
+    padding-right: 10px;
+  }
 `;
+
 const ProdutosImagens = styled.div`
     display: grid;
     margin: 30px 25px;
@@ -69,11 +75,12 @@ export default class Produtos extends React.Component {
           <div>
             <label>{"Ordenação"}</label>
             <select value={this.state.ordenacao} onChange={this.handleChangeSelect}>
-              <option value="crescente">{"Crescente"}</option>
-              <option value="decrescente">{"Decrescente"}</option>
+              <option value="crescente">{"Menor Preço"}</option>
+              <option value="decrescente">{"Maior Preço"}</option>
             </select>
           </div>
         </ProdutosInfo>
+        <hr/>
         <ProdutosImagens>
           {listaProdutos}
         </ProdutosImagens>
