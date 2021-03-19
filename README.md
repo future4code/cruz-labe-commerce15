@@ -18,6 +18,25 @@ O prazo é até sexta, 17h. Sem atrasos.
 Como de costume, espero uma entrega no mínimo impecável.
 Att.
 ```
+##Funcionalidades presentes no sistema:
+HOME
+Amostra de todos os produtos
+Ordenção em ordem crescente e decrescente de preço
+
+PRODUTOS
+Botão que permite adicionar produtos ao carrinho
+Exibição do nome, preço e imagem em um card
+
+CARRINHO
+Amostra de todos os produtos e quantidades adicionadas
+Remoção de itens do carrinho
+Mostra do valor total do carrinho
+
+FILTRO
+Possível fazer pesquisas através do valor mínimo e máximo do produto
+Possível filtrar os produtos através do nome
+
+
 ## Desenvolvedores:
 - Lucas Bacelar
 - Paula Lopes
