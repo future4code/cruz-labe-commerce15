@@ -2,9 +2,6 @@
 
 Link do site: http://mute-zephyr.surge.sh/
 
-## O que é?
-## Como usar?
-
 **<h2>Funcionalidades presentes no sistema:</h2>** 
 **HOME**<br>
 Amostra de todos os produtos<br>
@@ -30,8 +27,7 @@ Possível filtrar os produtos através do nome
 - Paulo Oliveira
 
 ## Link do Surge:
-mute-zephyr.surge.sh
-
+Visite: [LabE-commerce](mute-zephyr.surge.sh)
 
 ## Imagens:
 
