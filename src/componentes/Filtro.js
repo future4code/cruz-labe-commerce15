@@ -12,13 +12,11 @@ const FiltroContainer = styled.div`
     }
 `
 
-
-
 export default class Filtro extends React.Component {
     state = {
         valorMinimo: 1,
         valorMaximo: 1000,
-        nomeProduto: '',    
+        nomeProduto: '',
     }
 
     onChangeProduto = (event) => {

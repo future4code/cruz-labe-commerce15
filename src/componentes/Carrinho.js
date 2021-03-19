@@ -7,6 +7,11 @@ const ContainerCarrinho = styled.div`
     flex-direction: column;
     align-items: flex-start;
     padding: 0 10px;
+    font-weight: 300;
+
+    & > h3 {
+      color: #00000090;
+    }
 `
 
 export default class Carrinho extends React.Component {

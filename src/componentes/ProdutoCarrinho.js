@@ -15,6 +15,16 @@ const ContainerProduto = styled.div`
     & > button {
         width: 100px;
         height: 25px;
+        border: none;
+        border-bottom: 2px solid #F58220;
+        font-weight: bold;
+        color: #00000080;
+        cursor: pointer;
+      &:hover {
+        border-bottom: #fff;
+        background-color: #F58220;
+        color: #fff;
+      }
     }
 `
 
