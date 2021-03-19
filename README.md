@@ -7,8 +7,8 @@ Link do site: http://mute-zephyr.surge.sh/
 
 **<h2>Funcionalidades presentes no sistema:</h2>** 
 **HOME**<br>
--Amostra de todos os produtos<br>
--Ordenção em ordem crescente e decrescente de preço
+* Amostra de todos os produtos<br>
+* Ordenção em ordem crescente e decrescente de preço
 
 **PRODUTOS**<br>
 -Botão que permite adicionar produtos ao carrinho<br>
