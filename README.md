@@ -3,8 +3,11 @@
 Link do site: [Labe-commerce](http://mute-zephyr.surge.sh/)
 
 ## O que é?
+Site de comércio eletrônico feito com react
 ## Como usar?
-
+Faça o clone do repositório utilizando o comando git clone e, na pasta raíz do  projeto, dê o comando npm install para instalar as dependências
+do node e, logo após, dê o comando npm run start para rodar o projeto.
+Uma janela abrirá automaticamente na porta 3000 (http://localhost:3000/). Nela, vc poderá visualizar o arquivo rodando.
 **<h2>Funcionalidades presentes no sistema:</h2>** 
 **HOME**<br>
 * Amostra de todos os produtos<br>
