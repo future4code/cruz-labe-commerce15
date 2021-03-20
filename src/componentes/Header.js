@@ -20,7 +20,10 @@ export default class Header extends React.Component {
 
         return (
             <HeaderContainer>
-                <img src={Logo} />
+                <img 
+                    src={Logo}
+                    alt={"Logo do site"} 
+                />
             </HeaderContainer>
         )
     }

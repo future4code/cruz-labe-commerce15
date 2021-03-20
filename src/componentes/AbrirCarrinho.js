@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Carrinho from './Carrinho'
 
 import carrinho2 from './../img/carrinho2.svg'
 
@@ -14,7 +13,10 @@ export default class AbrirCarrinho extends React.Component {
 
         return (
             <PopupCarrinho>
-                <img src={carrinho2} />
+                <img 
+                    src={carrinho2} 
+                    alt={"imagem decorativa do carrinho de compras"}
+                />
             </PopupCarrinho>
         )
     }
