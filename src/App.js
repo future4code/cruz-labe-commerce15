@@ -159,6 +159,17 @@ export default class App extends React.Component {
     produtosCarrinho: [],
   };
 
+  componentDidMount () {
+    if(localStorage.getItem("produtosCarrinho")) {
+      const produtosCarrinhoObj = JSON.parse(localStorage.getItem("produtosCarrinho"));
+      this.setState({produtosCarrinho: produtosCarrinhoObj})
+    }
+  }
+
+  componentDidUpdate () {
+    localStorage.setItem("produtosCarrinho", JSON.stringify(this.state.produtosCarrinho))
+  }
+
   onChangeProduto = (event) => {
     this.setState({ nomeProduto: event.target.value });
   };
